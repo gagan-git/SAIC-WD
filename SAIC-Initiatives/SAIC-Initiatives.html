@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAIC</title>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <style>
+    #top_div{
+        margin: 15px 10px 0px 30px;
+    }
+    #logo{
+        margin-left: 9px;
+    }
+
+    .nav
+    {
+        float:right;
+        padding-top: 0;
+        display: inline;
+        font-family: Raleway;
+    }
+
+    .navbar.navbar-expand-lg li a
+    {
+        color: black;
+        font-size: 15px;
+        font-family: Raleway;
+    }
+
+    .navbar-nav li a 
+    {
+        margin-left: 10px;
+        font-family: Raleway;
+        padding-right: 3px;
+    }
+
+    .navbar 
+    {
+        padding-top: 0.01rem; /* 0px does not look good on small screens */
+        padding-bottom: 0.10rem;
+        font-size: smaller;      /* Just because I am using big size font */
+        width: 100%;
+        font-family: Raleway;
+    }
+                      
+    .p-2.flex-sm-fill.bd-highlight 
+    {
+        padding-right: 70px;
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+
+    .event 
+    {
+        position: relative;
+        font-size: 30px;
+        width: 100px;
+        margin-left: 140px;
+        margin-top: 20px;
+    }
+
+    .event:after 
+    {
+        position:absolute;
+        content: '';
+        width: 45%;
+        height: 2px;
+        background: #333;
+        bottom: -4px;
+        left: 5px;
+    }
+
+    .vl
+    {
+        border-left: 0.9px solid black;
+        height: 1150px;
+        margin-left: 30%;                    
+    }
+    
+
+    input
+    { 
+        border: none; 
+        width: 120px;
+    }
+
+    h1
+    {
+        margin-left: 6%; 
+        font-size: 35px;
+        font-weight:bold;
+        margin-top: 60px;
+        font-family: Raleway;
+    }
+
+    h4
+    {
+        color: black;
+    }
+
+    .news
+    {
+        position: relative;
+        font-size: 30px;
+        width: 100px;
+        font-family: Raleway;
+    }
+
+    .col-lg-4
+    {
+        padding-right: 53px;
+
+    }
+
+    .news:after 
+    {
+        font-family: Raleway;
+        position: absolute;
+        content: '';
+        width: 40%;
+        height: 2px;
+        background: #333;
+        bottom: -7px;
+        left: 0;
+    }
+
+
+ 
+    #nav > li{
+        font-size: 14px;
+        font-family: "Raleway";
+        padding-top: 0;
+        margin-top: 0;
+        margin: 0 20px;
+    }
+    #login, #join{
+        font-size: 14px;
+        font-family: "Raleway";
+        padding: 0 8px;
+        margin-top: 0;
+        float: right;
+    }
+    #login
+    {
+        border-right: 0px solid #95989A; 
+    }
+    #join
+    {
+        border-left: 1px solid #95989A; 
+    }
+
+    #selected
+    {
+        border-bottom: 2px solid #2E2E2E;
+        color: #007bff !important;
+    }
+
+    #lt
+    {
+        margin-right: 25px;
+    }
+
+    a
+    {
+        text-decoration:none;
+        color: black;
+    }
+
+    .container
+    {
+        margin-top: 180px;
+    }
+
+    #headings
+    {
+       width: 22%;
+       margin-left: 6%;
+       float : left;
+       border-right: 1px solid black;
+    }
+
+    a
+    {
+       text-decoration: none;
+       margin-top: 0;
+       padding-top: 0;
+       color: black;
+    }
+
+    h2
+    {
+       font-size: 30px;
+       display: inline;
+    }
+
+    p
+    {
+      margin: 5px 0;
+      line-height: 2;
+      color: #2E2E2E; 
+      margin-left: 9.17%;
+      font-size: 18px;
+    }
+
+    div
+    {
+      margin: 20px 0px 20px 0px;
+      padding:0; 
+    }
+
+    #small 
+    { 
+      width: 15%;
+      height: 2px;
+      display: block;
+      color: black;    
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: 9.17%;
+      font-weight: bolder;
+      background-color: #333;
+    }
+
+    #details
+    {
+      padding:0 7.9% 0 31%;
+    }
+
+    .mentorshipprogram
+    {
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .maintext
+    {
+        font-family: Karla;
+        font-size: 18px;
+        display: inline-flex;
+    }
+   hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+        
+    </style>
+
+
+</head>
+
+
+  <body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <div id="top_div">
+        <a href="#"><img id="logo" src="monochrome.png" height="24px" alt="saic_logo" width="58px"></a>
+        <span class='nav'>
+            <i class="fas fa-search" style="height: 30px; margin-right: 15px;">
+            </i>
+            <input type="text" name="search" placeholder="Search" height="20px">
+        </span>
+      </div>
+        <!--NAVBAR-->
+
+        <nav class="navbar navbar-expand-lg">
+  
+    <ul class="navbar-nav" id="nav">
+
+    <li class="nav-item active" id="selected">
+    <a class="nav-link" href="#">EVENTS </a>
+
+    </li>
+
+    <li class="nav-item active">
+    <a class="nav-link" href="#" class="inactive">INITIATIVES </a>
+
+    </li>
+
+    <li class="nav-item active">
+    <a class="nav-link" href="#" class="inactive">ASSOCIATIONS </a>
+  
+    </li> 
+
+    <li class="nav-item active">
+    <a class="nav-link" href="#" class="inactive">CHRONICLES </a>
+    
+    </li> 
+
+    <li class="nav-item active">
+    <a class="nav-link" href="#" class="inactive">RESOURCES </a>
+    
+    </li> 
+
+    <li class="nav-item active">
+    <a class="nav-link" href="#" class="inactive">ABOUT US </a>
+
+    </li>
+
+    <li class="nav-item active">
+    <a class="nav-link" href="#" class="inactive">GIVE IIT-BHU </a>
+
+    </li>
+
+    </ul >
+
+    <ul  class="navbar-nav">
+        <li ><span id="login"><a href="#"style="text-decoration: none">LOGIN</a></span></li>
+        <li ><span id="join"><a href="#"style="text-decoration: none">JOIN</a></span></li>
+    </ul>
+
+</nav>
+
+<div id="headings">
+  <font style="Raleway" >
+  <p><h2 style="margin-left: 24px"><b>Initiatives</b></h2></p><hr id="small">
+  <p><a href="#" style="text-decoration: none;">Mentorship</a></p>
+  <p><a href="#" style="text-decoration: none;">Alumni Talks</a></p>
+  <p><a href="#" style="text-decoration: none;">IDP</a></p>
+  <p><a href="#" style="text-decoration: none;">ADPP</a></p>
+  </font>
+</div>
+
+<div id="details">
+      <p class="mentorshipprogram">Mentorship Program</p><br>
+        <img src="stefan-stefancik-257625-unsplash.png" style="margin-left: 72px;">
+          <p class ="maintext">
+         Our college is really lucky to have a vast alumni network of 100 years. With the aim of mending the broken link between students and alumni,SAIC started the “Student Alumni Mentorship Program”.Through e-mails and phone calls ,every interested student studying in their second or third year is connected to a mentor(alumni) from whom they can receive guidance about various challenges and growth opportunities in the desired field of career.Almost -- students have already been benefited from this program and so the number of students applying for this is increasing every year. 
+     </p>
+     <hr style="margin-left: 72px;">
+</div> 
+
+
+<div id="details">
+      <p class="mentorshipprogram">Alumni Talks</p><br>
+        <img src="stefan-stefancik-257625-unsplash.png" style="margin-left: 72px;">
+          <p class ="maintext">
+         The visionary founder of BHU , "Bharat Ratna Mahamana Pandit Madan Mohan Malviya ji" always believed in overall personality development of students.Thus,we have a huge network of alumni who have not only excelled in the engineering fields but also in fields of finance,art,politics,civil services,management and alot more.Whole year in regular intervals ,we keep organising "Alumni Talks". under different genres.Prominent alumni in different domains are invited to share about their success journey with the students of their alma mater and provide them valuable guidance for future.Every time this program witnesses a huge crowd of students. 
+     </p>
+     <hr style="margin-left: 72px;">
+</div>
+
+<div id="details">
+      <p class="mentorshipprogram">IDP | Industrial defined problems</p><br>
+        <img src="stefan-stefancik-257625-unsplash.png" style="margin-left: 72px;">
+          <p class ="maintext">
+         The visionary founder of BHU , "Bharat Ratna Mahamana Pandit Madan Mohan Malviya ji" always believed in overall personality development of students.Thus,we have a huge network of alumni who have not only excelled in the engineering fields but also in fields of finance,art,politics,civil services,management and alot more.Whole year in regular intervals ,we keep organising "Alumni Talks". under different genres.Prominent alumni in different domains are invited to share about their success journey with the students of their alma mater and provide them valuable guidance for future.Every time this program witnesses a huge crowd of students. 
+     </p>
+     <hr style="margin-left: 72px;">
+</div>
+
+<div id="details">
+      <p class="mentorshipprogram">APTP | Alumni placement training program</p><br>
+        <img src="stefan-stefancik-257625-unsplash.png" style="margin-left: 72px;">
+          <p class ="maintext">
+         Every student hopes to find a mentor having similar interests ,someone who can help them acquire adequate skillsets so that they can get ready for the placement season.With this aim in mind, SAIC connects with lot of our alumni both physically and also online through e-mails and hangouts groups ,and they very enthusiastically volunteer to guide the final year students for placement interviews.Almost -- students already have taken the advantage of this program to bag their dream jobs and the number is witnessing huge increase every year. 
+     </p>
+     <hr style="margin-left: 72px;">
+</div>
+<br><br><br>
+
+
+
+
