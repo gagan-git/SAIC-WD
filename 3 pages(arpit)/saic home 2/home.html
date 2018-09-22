@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Trial of Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="home.css" rel="stylesheet">
+
+
+   
+</head>
+<body>
+
+
+    <!-- navigation bar-->
+    <div class="w3-top w3-white">
+        <div class="w3-bar">
+            <a class="w3-bar-item w3-button w3-padding-large" href="#"><img src="images/monochrome.png" style="width:58px;height:24px;"></a>
+            <a class="w3-bar-item w3-button w3-hide-large w3-padding-large w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <input class="w3-input w3-bar-item w3-padding-large w3-right" type="text" placeholder="Search" style="width:150px;">
+            <a class="w3-bar-item w3-padding-large w3-right w3-button"><i class="fa fa-search"></i></a></a>
+                
+        </div>
+        <div class="w3-bar w3-card w3-hide-small w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">INITIATIVES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ASSOCIATIONS</a>
+                <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">CHRONICLES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">RESOURCES</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ABOUT US</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">GIVE IIT-BHU</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-right w3-text-blue" style="font-weight:bold;">JOIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-right w3-text-blue" style="font-weight:bold;">LOGIN</a>
+                
+                
+        </div>
+           <!-- overlay nav-->
+            <div class="w3-bar-block w3-card w3-hide" id="navigation">
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">INITIATIVES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">ASSOCIATIONS</a>
+                <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small">CHRONICLES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">RESOURCES</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small">ABOUT US</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">GIVE IIT-BHU</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small  w3-text-blue">JOIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-text-blue">LOGIN</a>
+                    
+                    
+            </div>
+
+
+        </div>
+
+
+
+        <!--slideshow -->
+
+    
+
+    <div class="w3-row" style="width:100%;margin-top:84px;">
+
+        <div class="w3-col slideshow-container l6 m12 s12" style="height:500px;">
+            <div class="w3-display-container">
+                <img class="slides fade" src="images/2.jpg" style="width:100%;height:425px;">
+                <img class="slides fade" src="images/bhu_gate.jpg" style="width:100%;height:425px;">
+                <img class="slides fade" src="images/IIT-BHU-3.jpg" style="width:100%;height:425px;">
+                <img class="slides fade" src="images/Mandir-6.jpg" style="width:100%;height:425px;">
+                <img class="slides fade" src="images/iiy.jpg" style="width:100%;height:425px;">
+                <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+
+        <div class="w3-row">
+            <div class="w3-col s2">
+                <img src="images/2.jpg" class="dot w3-opacity w3-hover-opacity-off" style="width:100%;height:75px;" onclick="currentSlide(1)">
+            </div>
+            <div class="w3-col s2">
+                <img src="images/bhu_gate.jpg" class="dot w3-opacity w3-hover-opacity-off" style="width:100%;height:75px;" onclick="currentSlide(2)">
+            </div>
+            <div class="w3-col s2">
+                <img src="images/IIT-BHU-3.jpg" class="dot w3-opacity w3-hover-opacity-off" style="width:100%;height:75px;" onclick="currentSlide(3)">
+            </div>
+            <div class="w3-col s2">
+                <img src="images/Mandir-6.jpg" class="dot w3-opacity w3-hover-opacity-off" style="width:100%;height:75px;" onclick="currentSlide(4)">
+            </div>
+            <div class="w3-col s2">
+                <img src="images/iiy.jpg" class="dot w3-opacity w3-hover-opacity-off" style="width:100%;height:75px;" onclick="currentSlide(5)">
+            </div>
+            <div class="w3-col s2">
+                <a href="#" style="text-align:center;" class="dot1"><h4>GALLERY</h4></a>
+            </div>
+        </div>
+            
+                
+        </div>
+
+        
+        <div class="w3-col l6 m12 s12">
+         
+            <div class="w3-display-container " style="width:100%;height:185px;position:relative;box-shadow:inset 0 0 5px #000000;">
+                <div class="w3-display-middle">
+                    <h4 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:darkslateblue;"><b>Welcome to your alma mater.<br>
+                       We are pleased  to have you here.</b></h4>
+
+                </div>
+            </div>
+            <div class="w3-display-container " style="width:100%;height:315px;">
+                    <div class="w3-display-middle">
+                        <h3><b>CENTENARY<br>
+                        CELEBRATION</b></h3>
+                    <hr style="width:50px;">   
+
+                    <h5><b>100 YEARS</b> OF IIT-BHU VARANASI</h5>
+                    <a href="#" class="w3-right" style="text-decoration:none;color:dodgerblue;"><b>LEARN  MORE</b></a>
+                    </div>
+
+                    <div class="w3-display-bottomleft">
+                        <img src="images/image002.jpg">
+                    </div>
+                    <div class="w3-display-topright">
+                        <img src="images/image003.jpg">
+                    </div>
+                    <div class="w3-display-topleft">
+                        <img src="images/3.png" style="width:65px;height:142px;">
+                    </div>
+                    <div class="w3-display-bottomright">
+                        <img src="images/2.png" style="width:100px;height:135px;">
+                    </div>
+                    
+                    <div class="w3-display-topmiddle">
+                        <span class="bullet" ></span>
+                        <span class="bullet" ></span>
+                        <span class="bullet" ></span>
+                    </div>
+            </div>
+        </div>
+
+
+
+    </div>
+      
+
+
+
+
+
+
+
+
+
+
+    <div class="w3-content w3-display-container" style="max-width:1100px; margin-top:80px;">
+        <h2 class="w3-padding" style="margin-left:40px;">NEWS
+            <hr style="width:25px;">
+        </h2>
+        <button class="w3-button w3-display-topright w3-black" style="margin-right:50px;margin-top:20px;" >&#10094;</button>
+        <button class="w3-button w3-display-topright w3-black" style="margin-top:20px;" >&#10095;</button>
+       
+        <div class="w3-row-padding w3-padding-large">
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/557b-Manu Vora with Dennis Keller.png" style="width:100%;height:197px;">
+                    <p>Dr. Manu Vora,Chemical Engg,1968 batch,was awarded Fulbright Specialist Project grant by the U.S. Department
+                        of State for 2018-2019 for teaching at IIT-BHU Varanasi.</p>
+                    <p>Share: <a><img src="images/fb 2e2e2e.png" style="width:19px;height:19px;"></a>
+                    <a><img src="images/LINKED IN 2e2e2e.png" style="width:19px;height:19px;"></a>
+                    <a><img src="images/twitter.png" style="width:19px;height:19px;"></a></span>
+                    <a href="#" style="padding-left:50px;">READ MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/416x416.png" style="width:100%;height:197px;">
+                    <p>Dr. Deep Jariwala B.Tech Metallurgical engineering batch of 2010 made it to Forbes 30 under 30 Science!.</p>
+                    <p>Share: <a><img src="images/fb 2e2e2e.png" style="width:19px;height:19px;"></a>
+                    <a><img src="images/LINKED IN 2e2e2e.png" style="width:19px;height:19px;"></a>
+                    <a><img src="images/twitter.png" style="width:19px;height:19px;"></a></span>
+                    <a href="#" style="padding-left:50px;">READ MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/Ware-Team-Aditya-Goel-Rahul-Raj.png" style="width:100%;height:197px;">
+                    <p>Ware,co-founded by three IIT-BHU alumni,Aditya Goel,Rahul Raj and Arvind Jain has
+                        been included in YourStory's list of 30 most promising Startups of 2017. </p>
+                    <p>Share: <a><img src="images/fb 2e2e2e.png" style="width:19px;height:19px;"></a>
+                    <a><img src="images/LINKED IN 2e2e2e.png" style="width:19px;height:19px;"></a>
+                    <a><img src="images/twitter.png" style="width:19px;height:19px;"></a></span>
+                    <a href="#" style="padding-left:50px;">READ MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="w3-right">
+                <a href="#"><h3>VIEW ALL<i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+            </div>
+        </div>
+        
+
+
+        <h2 class="w3-padding" style="margin-left:40px;">
+            <a href="#">EVENTS</a>  |   <a href="#" style="color:grey;"> UPCOMING EVENTS</a>
+                <hr style="width:25px;">
+        </h2>
+
+
+        <div class="w3-row-padding w3-padding-large">
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/asset-1.png" style="width:100%;height:197px;">
+                    <h4>Reunion</h4>
+                    <h5>CSE 1993 batch | 22-23 Feb 2018</h5>
+                    <p>A two-day event comprising of department visit,meeting the faculty and PhD scholars,an
+                         interaction session with students organised.<br><br>
+                        <a href="#" style="text-decoration: none;">READ MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></a>    
+                    </p>
+                </div>
+
+            </div>
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/asset-1.png" style="width:100%;height:197px;">
+                    <h4>Reunion</h4>
+                    <h5>CSE 1993 batch | 22-23 Feb 2018</h5>
+                    <p>A two-day event comprising of department visit,meeting the faculty and PhD scholars,an
+                         interaction session with students organised.<br><br>
+                        <a href="#" style="text-decoration: none;">READ MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></a>    
+                    </p>
+                </div>
+                
+            </div>
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/asset-1.png" style="width:100%;height:197px;">
+                    <h4>Reunion</h4>
+                    <h5>CSE 1993 batch | 22-23 Feb 2018</h5>
+                    <p>A two-day event comprising of department visit,meeting the faculty and PhD scholars,an
+                         interaction session with students organised.<br><br>
+                        <a href="#" style="text-decoration: none;">READ MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></a>    
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <h2 class="w3-padding" style="margin-left:40px;">LEADING AROUND THE WORLD
+            <hr style="width:25px;">
+        </h2>
+
+
+
+        <div class="w3-row-padding w3-padding-large">
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/JayChaudhary.png" style="width:100%;height:197px;">
+                    <h4>JAY CHAUDHARY</h4>
+                    <h5>Founder | ZScaler | Electronics Engg.</h5>
+                    <p>
+                    Founder of successful companies like ZScaler,AirDefense,CipherTrust etc.Conferred with Entrepreneur of the year and innovator and influencer.    
+                    </p>
+                    </div>
+    
+            </div>
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/ManojSinha.png" style="width:100%;height:197px;">
+                    <h4>SHRI MANOJ SINHA</h4>
+                <h5>Minister | Railways | Civil Engg.</h5>
+                <p>
+                    Currently the minister of state for Railways.Popularly known for his work in backward villages.Among the seven most honest MPs according to India Today.
+                </p>
+                    </div>
+                    
+            </div>
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-padding" style="margin:0px 10px;">
+                    <img src="images/nikesharora.png" style="width:100%;height:197px;">
+                    <h4>NIKESH ARORA</h4>
+                    <h5>COO | SoftBank Corp. | Electrical Engg.</h5>
+                    <p>
+                    Former Google executive and current president and COO of the Japanese $70 billion giant SoftBank corp.
+                </div>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!--  footer-->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center " id="footer" style="width:100%;">
+            <div class="w3-row-padding">
+              <div class="w3-col w3-padding-large l4 s12">
+                <h4 style="text-align:left;padding-left:64px;"><b>STUDENT ALUMNI INTERACTION CELL<br>IIT BHU (VARANASI) </b></h4>
+                <p style="text-align:left;padding-left:64px;color:grey;font-size: 16px;">DEAN<br>
+                     OFFICE OF RESOURCES AND ALUMNI<br>
+                     IIT BHU VARANASI-221005<br>
+                     0542-2367037<br>
+                     dora@iitbhu.ac.in<br>
+                     <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+                     <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+                     <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+                     <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+                     <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+                     <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+                </p>
+                
+              </div>
+        
+              <div class="w3-col w3-padding-large l4 s12">
+                <h4><b>About</b></h4>
+                <p style="color:grey;font-size: 13px;"><a href="#">LINKS</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">EVENTS</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">INITIATIVES</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">ASSOCIATIONS</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">CHRONICLES</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">SERVICES</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">ABOUT US</a></p>
+                <p style="color:grey;font-size: 13px;"><a href="#">GIVE IIT-BHU</a></p>
+        
+              </div>
+        
+              <div class="w3-col l4 s12 w3-padding-large w3-justify">
+                <h2><b>CENTENARY<br>
+                CELEBERATIONS.</b></h2>
+                <br>
+                <br>
+                <br>
+
+        
+                <input class="w3-input " type="text" placeholder="Search" style="width:150px;">
+                <a class=" w3-button"><i class="fa fa-search"></i></a>
+          
+        
+
+
+            </div>
+            </div>
+          </footer>
+    
+    
+    
+    
+    
+    
+    <!--footer end-->
+    
+    <hr style="width:100%; height:0.5px;">
+    <div class="w3-display-container" style="height:40px;">
+         <a class="w3-button w3-padding-large w3-display-left" href="#"><img src="images/monochrome.png" style="width:58px;height:24px;"></a>
+         <p class="w3-display-right">@2018 IIT BHU Varanasi</p>
+    </div>
+                   
+    
+            
+
+
+
+
+
+
+<!--    -->
+        <script>
+                function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+        var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("slides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  dots[slideIndex-1].className += " w3-opacity-off";
+                }
+
+
+                var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+        </script>
+
+</body>
+</html>
