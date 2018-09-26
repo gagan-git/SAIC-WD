@@ -1,3 +1,6 @@
+	body{
+		padding-top: 150px;
+	}
 	#top_div{
 		margin: 15px 10px 0px 35px;
 	}
@@ -44,7 +47,7 @@
 		float: right;
 	}
 	div{
-		margin: 20px 0px 20px 0px;
+		margin: 0px 0px 0px 0px;
 		padding:0; 
 	}
 	#share{
