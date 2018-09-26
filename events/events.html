@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="events.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <!-- navigation bar-->
+    <div class="w3-top w3-white">
+        <div class="w3-bar">
+            <a class="w3-bar-item w3-button w3-padding-large" href="#"><img src="monochrome.png" style="width:58px;height:24px;"></a>
+            <a class="w3-bar-item w3-button w3-hide-large w3-padding-large w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <input class="w3-input w3-bar-item w3-padding-large w3-right" type="text" placeholder="Search" style="width:150px;">
+            <a class="w3-bar-item w3-padding-large w3-right w3-button"><i class="fa fa-search"></i></a></a>
+                
+        </div>
+        <div class="w3-bar w3-card w3-hide-small w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-text-blue" style="font-weight:bold;">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">INITIATIVES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ASSOCIATIONS</a>
+                <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">CHRONICLES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">RESOURCES</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ABOUT US</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">GIVE IIT-BHU</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-right w3-text-blue" style="font-weight:bold;">JOIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-right w3-text-blue w3-border-right" style="font-weight:bold;">LOGIN</a>
+                
+                
+        </div>
+           <!-- overlay nav-->
+            <div class="w3-bar-block w3-card w3-hide" id="navigation">
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-text-blue">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">INITIATIVES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">ASSOCIATIONS</a>
+                <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small">CHRONICLES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">RESOURCES</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small ">ABOUT US</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">GIVE IIT-BHU</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small  w3-text-blue">JOIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-text-blue">LOGIN</a>
+                    
+                    
+            </div>
+
+
+        </div>
+
+        <!-- main content-->
+    <div class="w3-content" style="max-width:1200px;">
+
+             <!--sidebar-->
+        <div class="w3-container" style="margin-top:150px;">
+            <div class="w3-bar-block w3-border-right" style="width:30%;float:left;">
+                <h2>
+                    Events<hr style="width:80px;">
+                </h2>
+                <p><a href="#" style="text-decoration: none;">Recent</a></p>
+                <p><a href="#" style="text-decoration: none;">Upcoming</a></p>
+                <p><a href="#" style="text-decoration: none;">+ Create an Event</a></p><br>
+                <p style="font-size:22px;padding-left:10px;">Filter</p><br>
+
+
+                <label class="containers">Alumni Meet
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="containers">Alumni Meet
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="containers">Re-unions
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="containers">On-campus activities
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <!--Date Picker-->
+                  
+                    <p style="font-size: 24px;">Date</p>
+                    <p>From : <input type="date" name="date" class="date"><a href=""> </a></p>
+                    <p style="margin-left: 7%">To : <input type="date" name="date" class="date"><a href=""></a> </p>
+                    <br>
+                    <p style="font-size: 24px;"><a href="" style="color: black;"> Accommodations</p></a><br>
+                    <p style="font-size: 24px;"><a href="" style="color: black;">FAQs</p></a>
+
+
+            </div>
+            
+                
+
+
+
+
+            <!--events content-->
+            <div class="w3-row-padding w3-padding-large" style="float:right;width:70%;">
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="asset-1.png" style="width:100%;height:197px;">
+                        <h4>Reunion</h4>
+                        <h5>CSE 1993 Batch | 22-23 Feb 2018</h5>
+                        <p>
+                            A two-day event, comprising of department visit, meeting the 
+                            faculty and PhD scholars, an interaction session with the students organised    
+                        </p>
+                        </div>
+        
+                </div>
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="28058755_542311636140589_5671974866773016437_n.png" style="width:100%;height:197px;">
+                        <h4>Centenary initiatives launch</h4>
+                         <h5>22 Feb 2018</h5>
+                    <p>
+                        A two-day event, comprising of department visit, meeting the faculty
+                         and PhD scholars, an interaction session with the students organised
+                    </p>
+                        </div>
+                        
+                </div>
+                
+            </div>
+
+            <div class="w3-row-padding w3-padding-large" style="float:right;width:70%;">
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="27459412_529974014041018_4700145935636832478_n.png" style="width:100%;height:197px;">
+                        <h4>Reunion</h4>
+                        <h5>CSE 1993 Batch | 22-23 Feb 2018</h5>
+                        <p>
+                            A two-day event, comprising of department visit, meeting the 
+                            faculty and PhD scholars, an interaction session with the students organised    
+                        </p>
+                        </div>
+        
+                </div>
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="26114040_516525578719195_2370008620856895121_n.png" style="width:100%;height:197px;">
+                        <h4>Reunion of Alumni</h4>
+                         <h5>22 Feb 2018</h5>
+                    <p>
+                        A two-day event, comprising of department visit, meeting the faculty
+                         and PhD scholars, an interaction session with the students organised
+                    </p>
+                        </div>
+                        
+                </div>
+                
+            </div>
+            <!--   -->
+            <div class="w3-row-padding w3-padding-large" style="float:right;width:70%;">
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="23473099_494648294240257_1758451704021418109_n.png" style="width:100%;height:197px;">
+                        <h4>Reunion</h4>
+                        <h5>CSE 1993 Batch | 22-23 Feb 2018</h5>
+                        <p>
+                            A two-day event, comprising of department visit, meeting the 
+                            faculty and PhD scholars, an interaction session with the students organised    
+                        </p>
+                        </div>
+        
+                </div>
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="21034283_464984440539976_8826448398206072215_n.png" style="width:100%;height:197px;">
+                        <h4>Centenary initiatives launch</h4>
+                         <h5>22 Feb 2018</h5>
+                    <p>
+                        A two-day event, comprising of department visit, meeting the faculty
+                         and PhD scholars, an interaction session with the students organised
+                    </p>
+                        </div>
+                        
+                </div>
+                
+            </div>
+
+            <div class="w3-row-padding w3-padding-large" style="float:right;width:70%;">
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="23559682_494648147573605_4331698753891355307_n.png" style="width:100%;height:197px;">
+                        <h4>Reunion</h4>
+                        <h5>CSE 1993 Batch | 22-23 Feb 2018</h5>
+                        <p>
+                            A two-day event, comprising of department visit, meeting the 
+                            faculty and PhD scholars, an interaction session with the students organised    
+                        </p>
+                        </div>
+        
+                </div>
+                <div class="w3-col l6 s12">
+                    <div class="w3-padding" style="margin:0px 10px;">
+                        <img src="23472768_494648320906921_1054823958544045152_n.png" style="width:100%;height:197px;">
+                        <h4>Reunion of Alumni</h4>
+                         <h5>22 Feb 2018</h5>
+                    <p>
+                        A two-day event, comprising of department visit, meeting the faculty
+                         and PhD scholars, an interaction session with the students organised
+                    </p>
+                        </div>
+                        
+                </div>
+                
+            </div>
+            
+            
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script>
+                function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+                }
+
+         
+
+                
+                
+        </script>
+    </body>
+</html>
