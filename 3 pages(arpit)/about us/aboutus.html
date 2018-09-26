@@ -26,26 +26,26 @@
                 
         </div>
         <div class="w3-bar w3-card w3-hide-small w3-hide-medium">
-                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;" >EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">EVENTS</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">INITIATIVES</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ASSOCIATIONS</a>
                 <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">CHRONICLES</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">RESOURCES</a>
-                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ABOUT US</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small w3-text-blue" style="font-weight:bold;">ABOUT US</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">GIVE IIT-BHU</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-right w3-text-blue" style="font-weight:bold;">JOIN</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-right w3-text-blue" style="font-weight:bold;">LOGIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-right w3-text-blue w3-border-right" style="font-weight:bold;">LOGIN</a>
                 
                 
         </div>
            <!-- overlay nav-->
             <div class="w3-bar-block w3-card w3-hide" id="navigation">
-                <a href="#" class="w3-bar-item w3-button w3-padding w3-small active">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">EVENTS</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small">INITIATIVES</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small">ASSOCIATIONS</a>
                 <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small">CHRONICLES</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small">RESOURCES</a>
-                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small">ABOUT US</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small w3-text-blue">ABOUT US</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small">GIVE IIT-BHU</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding w3-small  w3-text-blue">JOIN</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-text-blue">LOGIN</a>
@@ -57,9 +57,9 @@
         </div>
 
         <!-- main content-->
-        <div class="w3-content" style="max-width:1200px;">
+        <div class="w3-content" style="max-width:1200px;margin-top:120px;">
 
-                <h1 style="margin-top:14%;" class="w3-padding">
+                <h1 class="w3-padding">
                     About Us<hr style="width:120px;">
                 </h1>
                 <p class="w3-padding" style="font-size: 18px;">
@@ -73,16 +73,16 @@
     <div class="w3-container">
             <div class="w3-bar-block w3-border-right" style="width:20%;float:left;">
             <h1>Team</h1>
-            <a href="" class="w3-bar-item w3-button" >Core Team</a>
-            <a href="" class="w3-bar-item w3-button" >Web Team</a>
-            <a href="" class="w3-bar-item w3-button">Public Relations</a>
-            <a href="" class="w3-bar-item w3-button">Logistics</a>
-            <a href="" class="w3-bar-item w3-button">Departmental Representatives</a>
-            <a href="" class="w3-bar-item w3-button">Volunteers</a>
+            <button class="w3-bar-item w3-button" onclick="currentSlide(1)">Core Team</button>
+            <button class="w3-bar-item w3-button" onclick="currentSlide(2)">Web Team</button>
+            <button class="w3-bar-item w3-button">Public Relations</button>
+            <button class="w3-bar-item w3-button">Logistics</button>
+            <button class="w3-bar-item w3-button">Departmental Representatives</button>
+            <button class="w3-bar-item w3-button">Volunteers</button>
             </div>
 
              <!--core content-->
-             <div class="w3-row-padding w3-padding-large" id="core" style="float:right;width:80%;">
+             <div class="w3-row-padding w3-padding-large Slides" style="float:right;width:80%;">
              
                 <div class="w3-col l4 m6 s12">
                     <div class="w3-container">
@@ -160,7 +160,7 @@
                             </div>
              </div>
              <!-- web content-->
-             <div class="w3-row-padding w3-padding-large w3-hide" id="web" style="float:right;width:80%;">
+             <div class="w3-row-padding w3-padding-large Slides" id="web" style="float:right;width:80%;">
              
                     <div class="w3-col l4 m6 s12">
                         <div class="w3-container">
@@ -241,7 +241,26 @@
             } else { 
                 x.className = x.className.replace(" w3-show", "");
             }
-        }
+                }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function currentSlide(n) {
+                  showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var x = document.getElementsByClassName("Slides");
+            if (n > x.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+            x[slideIndex-1].style.display = "block"; 
+            }
+         
 
                 
                 
