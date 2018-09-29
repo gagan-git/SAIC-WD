@@ -17,10 +17,12 @@
   background: #fff;
   border-right: none;
 }
+.login .login-form input[type="user-name"],
 .login .login-form input[type="email"],
 .login .login-form input[type="password"] {
   border-left: none;
 }
+.login .login-form input[type="user-name"]:focus,
 .login .login-form input[type="email"]:focus,
 .login .login-form input[type="password"]:focus {
   border-left: 3px solid #e74c3c;
