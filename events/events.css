@@ -109,3 +109,12 @@ a{
  -ms-transform: rotate(45deg);
  transform: rotate(45deg);
 }
+
+img.main
+{
+      border:1px solid #ccc;
+      padding: 5px;
+      -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+      -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+      box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
