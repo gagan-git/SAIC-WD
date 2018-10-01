@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="events.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+</head>
+<style>
+{
+    font-family: 'Raleway', sans-serif;
+    box-sizing:border-box;
+    }
+    #navigation a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+
+}
+a
+{
+    text-decoration:none;
+}
+
+#small
+{
+      width: 11%;
+      height: 3px;
+      display: block;
+      color: black;    
+      margin-top: 0.1em;
+      margin-bottom: 0.5em;
+      font-weight: bolder;
+      background-color: #333;
+}
+
+/* Text hover effect*/
+
+a
+{
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a.effect-underline:after {
+    content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*FORM*/
+* {
+    box-sizing: border-box;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin-left: 40%;
+}
+
+label {
+    padding: 6px 5px 12px 0;
+    display: inline-block;
+}
+
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: inline-flex;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+</style>
+
+
+
+
+<body>
+
+
+    <!-- navigation bar-->
+    <div class="w3-top w3-white">
+        <div class="w3-bar">
+            <a class="w3-bar-item w3-button w3-padding-large" href="#"><img src="monochrome.png" style="width:58px;height:24px;"></a>
+            <a class="w3-bar-item w3-button w3-hide-large w3-padding-large w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <input class="w3-input w3-bar-item w3-padding-large w3-right" type="text" placeholder="Search" style="width:150px;">
+            <a class="w3-bar-item w3-padding-large w3-right w3-button"><i class="fa fa-search"></i></a></a>
+                
+        </div>
+        <div class="w3-bar w3-card w3-hide-small w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-text-blue" style="font-weight:bold;">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">INITIATIVES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ASSOCIATIONS</a>
+                <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">CHRONICLES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">RESOURCES</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">ABOUT US</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small" style="font-weight:bold;">GIVE IIT-BHU</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-right w3-text-blue" style="font-weight:bold;">JOIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-right w3-text-blue w3-border-right" style="font-weight:bold;">LOGIN</a>
+                
+                
+        </div>
+           <!-- overlay nav-->
+            <div class="w3-bar-block w3-card w3-hide" id="navigation">
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small w3-text-blue">EVENTS</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">INITIATIVES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">ASSOCIATIONS</a>
+                <a href="../chronicles/chronicles.html" class="w3-bar-item w3-button w3-padding w3-small">CHRONICLES</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">RESOURCES</a>
+                <a href="../about us/aboutus.html" class="w3-bar-item w3-button w3-padding w3-small ">ABOUT US</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small">GIVE IIT-BHU</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding w3-small  w3-text-blue">JOIN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding  w3-small w3-text-blue">LOGIN</a>
+                    
+                    
+            </div>
+
+
+        </div>
+
+        <!-- main content-->
+    <div class="w3-content" style="max-width:1200px;">
+
+             <!--sidebar-->
+        <div class="w3-container" style="margin-top:150px;">
+            <div class="w3-bar-block w3-border-right" style="width:30%;float:left;">
+                
+                <div class="LHS" style="font-size: 36px;"><b>Details<hr id="small"></b></div><br>
+                <p><a href="#" style="text-decoration: none;"class="effect-underline">Personal Info</a></p><br>
+                <p><a href="#" style="text-decoration: none;"class="effect-underline">Relationship with IIT-BHU</a></p><br>
+                <p><a href="#" style="text-decoration: none;"class="effect-underline">Professional Affiliation</a></p><br>
+                <p><a href="#" style="text-decoration: none;"class="effect-underline">Current Area of Interests</a></p><br>
+                <p><a href="#" style="text-decoration: none;"class="effect-underline">Alumni Connect Info</a></p><br>
+                <p><a href="#" style="text-decoration: none;"class="effect-underline">Mentoring</a></p><br>
+        </div>
+
+
+
+<!--FORM DETAILS RHS-->
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+       <div class="col-25">
+      <label for="phone">Phone</label>
+       </div>
+       <div class="col-75">
+    <input type="tel" id="phone" name="phone"
+           placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required />
+    <span class="validity"></span>
+       </div>
+    </div>
+    <br>
+
+    <div class="row">
+       <div class="col-25">
+      <label for="email">Email</label>
+       </div>
+       <div class="col-75">
+         <input type="email" placeholder="Eg: abc@gmail.com"name="emailaddress" required/>
+       </div>
+    </div>
+    <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="dob">Date of Birth</label>
+      </div>
+      <div class="col-75">
+       <input type="date" name="bday">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="mga">Marriage Anniversary</label>
+      </div>
+      <div class="col-75">
+       <input type="date" name="mga">
+      </div>
+    </div>
+    <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="sname">Spouse Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="sname" name="spousename" placeholder="Spouse name..">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="cname">Children Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="cname" name="childrenname" placeholder="Children name..">
+      </div>
+    </div>
+    <br>
+
+      <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="country" name="country" placeholder="Country Name..">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="resadd">Residential Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="resadd" name="residentialaddress" placeholder="Residental Address(with State and City)..">
+      </div>
+    </div>
+    <br>
+
+        <div class="row">
+       <div class="col-25">
+      <label for="phone">Residential Phone Number</label>
+       </div>
+       <div class="col-75">
+    <input type="tel" id="phone" name="phone"
+           placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required />
+    <span class="validity"></span>
+       </div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+        <script>
+                function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+                }           
+                
+        </script>
+    </body>
+</html>
