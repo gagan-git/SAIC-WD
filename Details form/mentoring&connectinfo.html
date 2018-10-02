@@ -106,6 +106,20 @@ input[type=email], select, textarea {
     border-radius: 4px;
     resize: vertical;
 }
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=url], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -216,128 +230,70 @@ input[type=submit] {
 <!--FORM DETAILS RHS-->
 <div class="container">
   <form action="/action_page.php">
-    <div class="row">
+
+        <div class="row">
       <div class="col-25">
-        <label for="fname">First Name</label>
+        <label for="mentor">Number of Students Mentored</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="Number" id="mentor" name="mentored" placeholder="Number of Students Mentored.." min="0" max="999999">
       </div>
     </div>
     <br>
 
-    <div class="row">
-       <div class="col-25">
-      <label for="phone">Phone</label>
-       </div>
-       <div class="col-75">
-    <input type="tel" id="phone" name="phone"
-           placeholder="123-456-7890"
-           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-           required />
-    <span class="validity"></span>
-       </div>
-    </div>
-    <br>
-
-    <div class="row">
-       <div class="col-25">
-      <label for="email">Email</label>
-       </div>
-       <div class="col-75">
-         <input type="email" placeholder="Eg: abc@gmail.com"name="emailaddress" required/>
-       </div>
-    </div>
-    <br>
-
-<div class="row">
+     <div class="row">
       <div class="col-25">
-        <label for="dob">Date of Birth</label>
+        <label for="fblink">Facebook Profile Link</label>
       </div>
       <div class="col-75">
-       <input type="date" name="bday">
+          <input type="url" id="fblink" name="fblink" placeholder="Facebook Profile Link..">
       </div>
     </div>
     <br>
 
-    <div class="row">
+          <div class="row">
       <div class="col-25">
-        <label for="mga">Marriage Anniversary</label>
+        <label for="twlink">Twitter Profile Link</label>
       </div>
       <div class="col-75">
-       <input type="date" name="mga">
-      </div>
-    </div>
-    <br>
-
-<div class="row">
-      <div class="col-25">
-        <label for="sname">Spouse Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="sname" name="spousename" placeholder="Spouse name..">
-      </div>
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="cname">Children Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="cname" name="childrenname" placeholder="Children name..">
+          <input type="url" id="twlink" name="twlink" placeholder="Twitter Profile Link..">
       </div>
     </div>
     <br>
 
       <div class="row">
       <div class="col-25">
-        <label for="country">Country</label>
+        <label for="rglink">Researchgate Profile Link</label>
       </div>
       <div class="col-75">
-        <input type="text" id="country" name="country" placeholder="Country Name..">
+          <input type="url" id="rglink" name="rglink" placeholder="ResearchGate Profile Link..">
       </div>
     </div>
     <br>
 
-    <div class="row">
+      <div class="row">
       <div class="col-25">
-        <label for="resadd">Residential Address</label>
+        <label for="gslink">Google Scholar Profile Link</label>
       </div>
       <div class="col-75">
-        <input type="text" id="resadd" name="residentialaddress" placeholder="Residental Address(with State and City)..">
+          <input type="url" id="gslink" name="gslink" placeholder="Google Scholar Profile Link..">
       </div>
     </div>
     <br>
 
-        <div class="row">
-       <div class="col-25">
-      <label for="phone">Residential Phone Number</label>
-       </div>
-       <div class="col-75">
-    <input type="tel" id="phone" name="phone"
-           placeholder="123-456-7890"
-           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-           required />
-    <span class="validity"></span>
-       </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="lilink">Linkedin Profile Link</label>
+      </div>
+      <div class="col-75">
+          <input type="url" id="lilink" name="lilink" placeholder="Linkedin Profile Link..">
+      </div>
     </div>
     <br>
 
-
-
-
-
-
+       <div class="row">
+      <div class="col-25">
+  
 
     <div class="row">
       <input type="submit" value="Submit">

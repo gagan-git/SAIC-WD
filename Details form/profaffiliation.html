@@ -106,6 +106,20 @@ input[type=email], select, textarea {
     border-radius: 4px;
     resize: vertical;
 }
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=url], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -216,42 +230,50 @@ input[type=submit] {
 <!--FORM DETAILS RHS-->
 <div class="container">
   <form action="/action_page.php">
+
     <div class="row">
       <div class="col-25">
-        <label for="fname">First Name</label>
+        <label for="org">Organizations Worked For</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="org" name="Organizations" placeholder="Organizations Worked For..">
       </div>
     </div>
     <br>
 
     <div class="row">
-       <div class="col-25">
-      <label for="phone">Phone</label>
-       </div>
-       <div class="col-75">
-    <input type="tel" id="phone" name="phone"
-           placeholder="123-456-7890"
-           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-           required />
-    <span class="validity"></span>
-       </div>
+      <div class="col-25">
+        <label for="corg">Current Organization</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="corg" name="CurrentOrganizations" placeholder="Current Organization..">
+      </div>
     </div>
     <br>
 
-    <div class="row">
+        <div class="row">
+      <div class="col-25">
+        <label for="offadd">Office Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="offadd" name="officeaddress" placeholder="Office Address..">
+      </div>
+    </div>
+    <br>
+
+        <div class="row">
+      <div class="col-25">
+        <label for="corg">Office Phone</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="offphno" name="Officephonenumber" placeholder="Office Phone Number">
+      </div>
+    </div>
+    <br>
+
+        <div class="row">
        <div class="col-25">
-      <label for="email">Email</label>
+      <label for="offemail">Office Email</label>
        </div>
        <div class="col-75">
          <input type="email" placeholder="Eg: abc@gmail.com"name="emailaddress" required/>
@@ -259,85 +281,7 @@ input[type=submit] {
     </div>
     <br>
 
-<div class="row">
-      <div class="col-25">
-        <label for="dob">Date of Birth</label>
-      </div>
-      <div class="col-75">
-       <input type="date" name="bday">
-      </div>
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="mga">Marriage Anniversary</label>
-      </div>
-      <div class="col-75">
-       <input type="date" name="mga">
-      </div>
-    </div>
-    <br>
-
-<div class="row">
-      <div class="col-25">
-        <label for="sname">Spouse Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="sname" name="spousename" placeholder="Spouse name..">
-      </div>
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="cname">Children Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="cname" name="childrenname" placeholder="Children name..">
-      </div>
-    </div>
-    <br>
-
-      <div class="row">
-      <div class="col-25">
-        <label for="country">Country</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="country" name="country" placeholder="Country Name..">
-      </div>
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="resadd">Residential Address</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="resadd" name="residentialaddress" placeholder="Residental Address(with State and City)..">
-      </div>
-    </div>
-    <br>
-
-        <div class="row">
-       <div class="col-25">
-      <label for="phone">Residential Phone Number</label>
-       </div>
-       <div class="col-75">
-    <input type="tel" id="phone" name="phone"
-           placeholder="123-456-7890"
-           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-           required />
-    <span class="validity"></span>
-       </div>
-    </div>
-    <br>
-
-
-
-
-
-
+      
 
     <div class="row">
       <input type="submit" value="Submit">
