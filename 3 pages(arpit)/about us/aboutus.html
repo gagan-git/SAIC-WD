@@ -73,13 +73,44 @@
         <div class="w3-container">
             <div class="w3-bar-block w3-border-right" style="width:18%;float:left;">
             <h1>Team</h1>
-            <button class="w3-bar-item w3-button" onclick="currentSlide(1)">Core Team</button>
-            <button class="w3-bar-item w3-button" onclick="currentSlide(2)">Departmental Alumni Committees</button>
+            <button class="w3-bar-item w3-button " onclick="currentSlide(1)" >DORA</button>
+            <button class="w3-bar-item w3-button " onclick="currentSlide(2)" >FIAA</button>
+            <button class="w3-bar-item w3-button" onclick="currentSlide(3)" >Core Team</button>
+            <button class="w3-bar-item w3-button" onclick="currentSlide(4)" >Departmental Alumni Committees</button>
             <button class="w3-bar-item w3-button" >Web Team</button>
             <button class="w3-bar-item w3-button">Public Relations</button>
             <button class="w3-bar-item w3-button">Logistics</button>
             <button class="w3-bar-item w3-button">Departmental Representatives</button>
             <button class="w3-bar-item w3-button">Volunteers</button>
+            </div>
+
+
+            <!--dora-->
+
+
+            <div class="w3-row-padding w3-padding-large Slides" style="float:right;width:80%;">
+                <div class="w3-container">
+                    <img src="ak_tripathi.jpg" style="width:150px;" >
+                    <p>Dr. Anil Kumar Tripathi</p>
+                    <p>Professor and Dean (Resources & Alumni)</p>
+                    <p>Department of Computer Science and Engineering</p>
+                    <p>aktripathi.cse@iitbhu.ac.in</p>
+                    <p>Contact - +91-542-2575648(R)</p>
+                    <p><a href="https://in.linkedin.com/in/anil-kumar-tripathi-9b0b4463"><i class="fa fa-linkedin w3-hover-opacity w3-large"></i></a></p>
+
+
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-large Slides" style="float:right;width:80%;">
+                <div class="w3-container">
+                    <img src="download.jpg" style="width:150px;" >
+                    <p>Dr. Puneet Kumar Bindlish</p>
+                    <p>Assistant Professor</p>
+                    <p>Department of Humanistic Studies, IIT (BHU)</p>
+                    <p>puneet.hss@iitbhu.ac.in</p>
+                    <p>Contact -  9810181219</p>
+                    <p><a href=" http://www.linkedin.com/in/puneetbindlish"><i class="fa fa-linkedin w3-hover-opacity w3-large"></i></a></p>
+                </div>
             </div>
 
             <div class="w3-row-padding w3-padding-large Slides" style="float:right;width:80%;">
@@ -564,6 +595,7 @@
             function showSlides(n) {
             var i;
             var x = document.getElementsByClassName("Slides");
+            y=document.getElementsByClassName("d");
             if (n > x.length) {slideIndex = 1} 
             if (n < 1) {slideIndex = x.length} ;
             for (i = 0; i < x.length; i++) {
